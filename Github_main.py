@@ -83,7 +83,7 @@ def fetch_ip_addresses():
             subprocess.run(command, shell=True , check=True)
             print(f"route added for ip :{ip}" )
         except subprocess.CalledProcessError as e :
-            print(f"error in route added for ip :{ip} jgygv" )
+            print(f"error in route added for ip :{ip} " )
             camera_list.append(camera_url)
     return camera_list
 
