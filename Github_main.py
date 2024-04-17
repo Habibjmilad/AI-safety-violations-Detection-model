@@ -3,7 +3,18 @@ import time
 import os
 import pyrebase
 import subprocess
+import sentry_sdk
 
+sentry_sdk.init(
+    dsn="https://6f55f8b619d5d9fc0bf8a5ab469059c1@o4507102368759808.ingest.de.sentry.io/4507102374527056",
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    traces_sample_rate=1.0,
+    # Set profiles_sample_rate to 1.0 to profile 100%
+    # of sampled transactions.
+    # We recommend adjusting this value in production.
+    profiles_sample_rate=1.0,
+)
 
 
 
