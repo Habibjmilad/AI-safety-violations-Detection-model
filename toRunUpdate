@@ -3,9 +3,9 @@ import time
 
 def run_script():
     
-    os.system('/bin/bash /path/to/your/script.sh')
+    os.system('cd /home/habib/CameraCapture/AI-safety-violations-Detection-model ; /bin/bash /home/habib/CameraCapture/AI-safety-violations-Detection-model/update_script.sh')
 
-# Run the script every 10 minutes
+# Run the script every 1 minutes
 while True:
     run_script()
-    time.sleep(60)  # Sleep for 10 minutes (600 seconds)
+    time.sleep(60)  # Sleep for 10 minutes (60 seconds)
