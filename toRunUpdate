@@ -1,0 +1,11 @@
+import os
+import time
+
+def run_script():
+    
+    os.system('/bin/bash /path/to/your/script.sh')
+
+# Run the script every 10 minutes
+while True:
+    run_script()
+    time.sleep(600)  # Sleep for 10 minutes (600 seconds)
