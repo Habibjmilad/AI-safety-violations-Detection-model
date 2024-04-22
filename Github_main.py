@@ -4,7 +4,7 @@ import os
 import pyrebase
 import subprocess
 import sentry_sdk
-#helloheloooo
+
 
 sentry_sdk.init(
     dsn="https://6f55f8b619d5d9fc0bf8a5ab469059c1@o4507102368759808.ingest.de.sentry.io/4507102374527056",
