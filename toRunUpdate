@@ -3,7 +3,7 @@ import time
 
 def run_script():
     
-    os.system('cd /home/habib/CameraCapture/AI-safety-violations-Detection-model ; /bin/bash /home/habib/CameraCapture/AI-safety-violations-Detection-model/update_script.sh')
+    os.system('cd /home/habib/CameraCapture/AI-safety-violations-Detection-model ; /bin/bash update_script.sh')
 
 # Run the script every 1 minutes
 while True:
