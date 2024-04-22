@@ -57,7 +57,7 @@ config = {
    "databaseURL": "https://raspberrypi-camera-uploads-default-rtdb.firebaseio.com",
    "projectId": "raspberrypi-camera-uploads",
    "storageBucket": "raspberrypi-camera-uploads.appspot.com",
-   "serviceAccount": "raspberrypi-camera-uploads-firebase-key.json",
+   "serviceAccount": "/home/habib/CameraCapture/AI-safety-violations-Detection-model/raspberrypi-camera-uploads-firebase-key.json",
     }
 
 # Initialize Firebase
@@ -82,6 +82,7 @@ def fetch_ip_addresses():
         try:
             subprocess.run(command, shell=True , check=True)
             print(f"route added for ip :{ip}" )
+            camera_list.append(camera_url)
         except subprocess.CalledProcessError as e :
             print(f"error in route added for ip :{ip} " )
             camera_list.append(camera_url)
