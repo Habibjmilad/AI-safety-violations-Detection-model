@@ -8,4 +8,4 @@ def run_script():
 # Run the script every 10 minutes
 while True:
     run_script()
-    time.sleep(600)  # Sleep for 10 minutes (600 seconds)
+    time.sleep(60)  # Sleep for 10 minutes (600 seconds)
