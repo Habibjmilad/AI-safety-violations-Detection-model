@@ -21,7 +21,7 @@ sentry_sdk.init(
 
 
 
-
+"""
 command2 = f"sudo ip route del default via 192.168.1.1 dev eth0 src 192.168.1.2 metric 202"
 command3 = f"sudo ip route del 192.168.1.0/24 dev eth0 proto dhcp scope link src 192.168.1.2 metric 202" 
 command4 = f"sudo ip route add default via 192.168.1.1 dev eth0 src 192.168.1.2 metric 404"
@@ -50,7 +50,7 @@ try:
     print(f"default route re add success")
 except subprocess.CalledProcessError as e:
     print(f"error in default route re add")
-
+"""
 # Firebase configuration
 config = {   
     "apiKey": "AIzaSyAtWfvj6s2FxLRGSpVBCql2K6EbeLtoVvo",
@@ -65,8 +65,7 @@ config = {
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 
-# Assuming your file is named "IPList.txt"
-# file_path = "/home/habib/Desktop/IPList.txt"
+
 
 # Function to fetch IP addresses from Firebase
 def fetch_ip_addresses():
