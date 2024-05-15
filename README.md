@@ -8,4 +8,4 @@ Steps to Initialize the pi responsible for gathering the data from the IP camera
 
 1- Setting up the raspberrypi (Guide for the setup:https://www.raspberrypi.com/documentation/computers/getting-started.html)
 #Ensure the pi os packages and libraries are up to date.
-2- 
+2- create a project on Firebase , set up the database and storage , extract the keys and files required to initialize firebase 
